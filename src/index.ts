@@ -7,8 +7,6 @@ let win: BrowserWindow;
  */
 const createWindow = () => {
     win = new BrowserWindow({
-        width: 800,
-        height: 600,
         titleBarStyle: `hidden`,
         title: `StatPixel Overlay`
     });
