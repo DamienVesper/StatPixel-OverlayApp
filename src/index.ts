@@ -1,4 +1,4 @@
-import Electron, { app, BrowserWindow } from 'electron';
+import { app, BrowserWindow } from 'electron';
 
 let win: BrowserWindow;
 
@@ -14,7 +14,9 @@ const createWindow = () => {
     });
 
     win.loadURL(`https://statpixel.net/overlay`);
-    win.on(`closed`, () => win = null);
+    win.on(`closed`, () => {
+        win = null;
+    });
 };
 
 app.on(`ready`, () => {
