@@ -2,18 +2,18 @@ import Electron, { app, BrowserWindow } from 'electron';
 
 let win: BrowserWindow;
 
+/**
+ * Create a browser window.
+ */
 const createWindow = () => {
     win = new BrowserWindow({
         width: 800,
         height: 600,
         titleBarStyle: `hidden`,
-        title: `Krew.io`,
-        webPreferences: {
-            nodeIntegration: true
-        }
+        title: `StatPixel Overlay`
     });
 
-    win.loadFile(`index.html`);
+    win.loadURL(`https://statpixel.net/overlay`);
     win.on(`closed`, () => win = null);
 };
 
@@ -27,5 +27,5 @@ app.on(`window-all-closed`, () => {
 });
 
 app.on(`activate`, () => {
-    if (win == null) createWindow();
+    if (!win) createWindow();
 });
