@@ -4,8 +4,8 @@
   "description": "An overlay application for StatPixel.",
   "main": "build/index.js",
   "scripts": {
-    "build": "electron .",
-    "dev": "electron-packager . --all",
+    "build": "electron-packager --asar --all",
+    "dev": "electron .",
     "dev:lint": "eslint . --fix --ext .ts"
   },
   "repository": {
