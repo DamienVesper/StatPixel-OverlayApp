@@ -8,7 +8,9 @@ let win: BrowserWindow;
 const createWindow = () => {
     win = new BrowserWindow({
         titleBarStyle: `hidden`,
-        title: `StatPixel Overlay`
+        title: `StatPixel Overlay`,
+
+        autoHideMenuBar: true
     });
 
     win.loadURL(`https://statpixel.net/overlay`);
