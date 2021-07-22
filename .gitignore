@@ -75,5 +75,8 @@ typings/
 # FuseBox cache
 .fusebox/
 
-# TypeScript build
+# TypeScript artifacts
 build/
+
+# Electron artifacts
+dist/

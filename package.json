@@ -4,11 +4,11 @@
   "description": "An overlay application for StatPixel.",
   "main": "build/index.js",
   "scripts": {
-    "build:app": "electron-packager . --asar --all",
+    "build:app": "electron-packager .  --out ./dist --asar --all",
     "build:tsc": "tsc",
     "dev": "electron .",
     "dev:lint": "eslint . --fix --ext .ts",
-    "dev:test": "electron-packager . --asar"
+    "dev:test": "electron-packager .  --out ./dist --asar"
   },
   "repository": {
     "type": "git",
@@ -21,13 +21,12 @@
     "url": "https://github.com/iynprojects/StatPixel-OverlayApp/issues"
   },
   "homepage": "https://github.com/iynprojects/StatPixel-OverlayApp#readme",
-  "dependencies": {
-    "electron": "^13.1.7"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/node": "^16.4.1",
     "@typescript-eslint/eslint-plugin": "^4.28.4",
     "@typescript-eslint/parser": "^4.28.4",
+    "electron": "^13.1.7",
     "electron-packager": "^15.3.0",
     "eslint": "^7.31.0",
     "eslint-config-standard": "^16.0.3",
