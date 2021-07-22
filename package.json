@@ -5,6 +5,7 @@
   "main": "build/index.js",
   "scripts": {
     "build": "electron-packager --asar --all",
+    "test": "electron-packager --asar",
     "dev": "electron .",
     "dev:lint": "eslint . --fix --ext .ts"
   },
