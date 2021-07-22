@@ -1,0 +1,22 @@
+{
+  "name": "statpixel-overlayapp",
+  "version": "0.0.1",
+  "description": "An overlay application for StatPixel.",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "",
+    "dev": "electron-packager . --all",
+    "dev:lint": "eslint . --fix --ext .ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iynprojects/StatPixel-OverlayApp.git"
+  },
+  "keywords": [],
+  "author": "iynprojects",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/iynprojects/StatPixel-OverlayApp/issues"
+  },
+  "homepage": "https://github.com/iynprojects/StatPixel-OverlayApp#readme"
+}
