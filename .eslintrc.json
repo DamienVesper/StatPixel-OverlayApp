@@ -1,28 +1,35 @@
 {
-  "env": {
-    "browser": true,
-    "es6": true,
-    "node": true
-  },
-  "extends": [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:import/errors",
-    "plugin:import/warnings",
-    "plugin:import/typescript"
-  ],
-  "parser": "@typescript-eslint/parser",
-  "settings": {
-    "import/resolver": {
-      "node": {
-        "extensions": [
-          ".js",
-          ".jsx",
-          ".ts",
-          ".tsx"
-        ]
-      }
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": [
+        "standard",
+        "eslint:recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint",
+        "import",
+        "node",
+        "promise"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 6
+    },
+    "rules": {
+        "indent": ["error", 4, {
+            "SwitchCase": 1
+        }],
+        "semi": [2, "always"],
+        "quotes": [2, "backtick", "avoid-escape"],
+
+        "no-mixed-operators": 0,
+        "curly": 0,
+
+        "prefer-arrow-callback": 1,
+        "prefer-template": 1
     }
-  }
 }
