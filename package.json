@@ -4,10 +4,11 @@
   "description": "An overlay application for StatPixel.",
   "main": "build/index.js",
   "scripts": {
-    "build": "electron-packager . --asar --all",
-    "test": "electron-packager . --asar",
+    "build:app": "electron-packager . --asar --all",
+    "build:tsc": "tsc",
     "dev": "electron .",
-    "dev:lint": "eslint . --fix --ext .ts"
+    "dev:lint": "eslint . --fix --ext .ts",
+    "dev:test": "electron-packager . --asar"
   },
   "repository": {
     "type": "git",
