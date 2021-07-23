@@ -5,8 +5,8 @@
   "description": "An application to view ingame player stats.",
   "main": ".webpack/main",
   "scripts": {
-    "package": "electron-forge package",
     "make": "electron-forge make",
+    "package": "electron-forge package",
     "publish": "electron-forge publish",
     "dev": "electron-forge start",
     "dev:lint": "eslint . --fix --ext .ts,.js"
