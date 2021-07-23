@@ -5,10 +5,10 @@
   "description": "An application to view ingame player stats.",
   "main": ".webpack/main",
   "scripts": {
-    "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
+    "dev": "electron-forge start",
     "dev:lint": "eslint . --fix --ext .ts,.js"
   },
   "keywords": [],
@@ -49,7 +49,7 @@
               "entryPoints": [
                 {
                   "html": "./public/index.html",
-                  "js": "./src/renderer.ts",
+                  "js": "./src/Renderer.tsx",
                   "name": "main_window"
                 }
               ]
