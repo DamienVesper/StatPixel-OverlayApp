@@ -2,8 +2,16 @@ const rules = require(`./webpack.rules`);
 const plugins = require(`./webpack.plugins`);
 
 rules.push({
+    test: /\.s[ac]ss$/i,
+    use: [
+        `style-loader`,
+        `css-loader`,
+        `sass-loader`
+    ]
+},
+{
     test: /\.css$/,
-    use: [{ loader: `style-loader` }, { loader: `css-loader` }]
+    use: [`style-loader`, `css-loader`]
 });
 
 module.exports = {
