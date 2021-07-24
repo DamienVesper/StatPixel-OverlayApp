@@ -27,12 +27,7 @@ jobs:
         with:
           cmd: install
 
-      - name: Compile TypeScript
-        uses: borales/actions-yarn@v2.3.0
-        with:
-          cmd: build:tsc
-
       - name: Build Electron App
         uses: borales/actions-yarn@v2.3.0
         with:
-          cmd: dev:test
+          cmd: make
