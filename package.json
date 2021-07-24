@@ -9,7 +9,7 @@
     "package": "electron-forge package",
     "publish": "electron-forge publish",
     "dev": "electron-forge start",
-    "dev:lint": "eslint . --fix --ext .ts,.js"
+    "dev:lint": "eslint . --fix --ext .tsx,.ts,.js"
   },
   "keywords": [],
   "author": "iynprojects",
