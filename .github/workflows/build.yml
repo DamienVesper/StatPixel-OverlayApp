@@ -23,11 +23,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Install Packages
-        uses: borales/actions-yarn@v2.3.0
-        with:
-          cmd: install
+        run: yarn install
 
       - name: Build Electron App
-        uses: borales/actions-yarn@v2.3.0
-        with:
-          cmd: make
+        run: yarn make
