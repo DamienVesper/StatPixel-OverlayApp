@@ -1,5 +1,9 @@
 /* Bootstrap */
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
 
+// Color Palettes.
 @import './palette.scss';
+@import './minecraft.scss';
+
+// Custom Styles
 @import './common.scss';
