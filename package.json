@@ -81,7 +81,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-react": "^7.24.0",
-    "fork-ts-checker-webpack-plugin": "^6.2.12",
+    "fork-ts-checker-webpack-plugin": "^6.3.1",
     "node-loader": "^2.0.0",
     "sass": "^1.36.0",
     "sass-loader": "^12.1.0",
